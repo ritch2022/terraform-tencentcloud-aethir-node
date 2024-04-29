@@ -58,7 +58,7 @@ Having the configuration done, continue with these commands:
 |--|--|--|--|
 |prefix|Yes||Prefix used to set different resources' name|
 |instance_count|Yes||The number of Lighthouse instances|
-|purchase_period|Yes||Subscription period in months|
+|purchase_period|Yes||[Subscription period in months](https://registry.terraform.io/providers/tencentcloudstack/tencentcloud/latest/docs/resources/lighthouse_instance#period)|
 |firewall_rules|Yes||Lighthouse instance firewall rules|
 |bundle_id|No|bundle_gen_nmc_lin_med2_01|[Lighthouse instance package](https://www.tencentcloud.com/document/product/1103/43335). default package is 2 core, 2 GB memory with 60 GiB SSD. No need to change.|
 |blueprint_id|No|lhbp-qnuz61zs|[The image of Lighthouse instance](https://www.tencentcloud.com/document/product/1103/43335), default is Ubuntu 22.04 LTS. No need to change.|
