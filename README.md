@@ -53,13 +53,19 @@ Having the configuration done, continue with these commands:
 - `terraform plan`
 - `terraform apply` select yes, enter
 
+It will create [Lighthouse instances](https://www.tencentcloud.com/document/product/1103/41251) and a [TAT command](https://www.tencentcloud.com/document/product/1147).
+
+TAT command is a shell script which will download the CLI and unzip the tar package.
+
+After executing `terraform apply`, you login tencent cloud console to have a check.
+
 ## Main parameters
 |Parameter|Required|Default|Description|
 |--|--|--|--|
 |prefix|Yes||Prefix used to set different resources' name|
 |instance_count|Yes||The number of Lighthouse instances|
 |purchase_period|Yes||[Subscription period in months](https://registry.terraform.io/providers/tencentcloudstack/tencentcloud/latest/docs/resources/lighthouse_instance#period)|
-|firewall_rules|Yes||Lighthouse instance firewall rules|
+|firewall_rules|Yes||[Lighthouse instance firewall rules](https://registry.terraform.io/providers/tencentcloudstack/tencentcloud/latest/docs/resources/lighthouse_firewall_template)|
 |bundle_id|No|bundle_gen_nmc_lin_med2_01|[Lighthouse instance package](https://www.tencentcloud.com/document/product/1103/43335). default package is 2 core, 2 GB memory with 60 GiB SSD. No need to change.|
 |blueprint_id|No|lhbp-qnuz61zs|[The image of Lighthouse instance](https://www.tencentcloud.com/document/product/1103/43335), default is Ubuntu 22.04 LTS. No need to change.|
 |renew_flag|No|NOTIFY_AND_MANUAL_RENEW|[Auto-Renewal flag](https://registry.terraform.io/providers/tencentcloudstack/tencentcloud/latest/docs/resources/lighthouse_instance#renew_flag)|
