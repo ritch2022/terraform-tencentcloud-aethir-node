@@ -3,9 +3,7 @@ This solution deploys a Terraform stack for Aethir CLI Tencent Cloud. It uses Li
 
 # Pre-requisites
 ## Tencent Cloud Account Creation and Setup
-Please follow the below procedures to set-up your Tencent Cloud Account
- - Contact our partner( [telegram](https://t.me/mizukate) ) to get an account
- - Better to follow [best practices](https://www.tencentcloud.com/document/product/598/10592) for enhancing the security
+- Better to follow [best practices](https://www.tencentcloud.com/document/product/598/10592) for enhancing the security
 
 ## Deployment Configuration
 The deployment is made with terraform, directly through the API of the Tencent Cloud Account created in the step above. To achieve the deployment, the environment must be set-up. Here are the steps:
